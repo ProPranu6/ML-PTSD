@@ -28,4 +28,30 @@ path_to_proc_agg_consist_passive = path_to_proc_agg_passive + 'consist-by-mean_m
 path_to_proc_concpt_agg_consist_usrwide_passive = '/Volumes/MAVERICK-Script/root/processed-data/passive-data/concpt-agg-data/usrwide/' 
 path_to_proc_concpt_agg_consist_usrwise_passive = '/Volumes/MAVERICK-Script/root/processed-data/passive-data/concpt-agg-data/usrwise/'
 
+if __name__ == '__main__':
+
+    # List of path variables and their corresponding string values
+    paths = {
+        'path_to_meta_data': path_to_meta_data,
+        'path_to_gen_insights': path_to_gen_insights,
+        'path_to_og_passive': path_to_og_passive,
+        'path_to_og_fitbit': path_to_og_fitbit,
+        'path_to_og_agg_passive': path_to_og_agg_passive,
+        'path_to_og_usr_passive': path_to_og_usr_passive,
+        'path_to_proc_agg_fitbit': path_to_proc_agg_fitbit,
+        'path_to_proc_usr_fitbit': path_to_proc_usr_fitbit,
+        'path_to_proc_agg_passive': path_to_proc_agg_passive,
+        'path_to_proc_agg_consist_passive': path_to_proc_agg_consist_passive,
+        'path_to_proc_concpt_agg_consist_usrwide_passive': path_to_proc_concpt_agg_consist_usrwide_passive,
+        'path_to_proc_concpt_agg_consist_usrwise_passive': path_to_proc_concpt_agg_consist_usrwise_passive
+    }
+    
+    
+    # Print the path variables and their values
+    print("\n")
+    print("{:^150s}".format("PATH VARIABLES"))
+    print("\n\n\n")
+    for name, path in paths.items():
+        print(f'{name}: {path}')
+    print("\n\n\n")
 
