@@ -1,6 +1,6 @@
 ## Passive Data Processing
 
-This repository contains scripts and notebooks for processing and analyzing passive data. The passive data includes various streams of data such as Fitbit data, collected passively from users.
+This repository contains scripts and notebooks for processing and analyzing passive wearable data. The passive data includes various streams of data collected passively from users.
 
 ## Files Description
 
