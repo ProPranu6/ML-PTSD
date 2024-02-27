@@ -1,5 +1,4 @@
-# ML-PTSD
-# Passive Data Processing
+## Passive Data Processing
 
 This repository contains scripts and notebooks for processing and analyzing passive data. The passive data includes various streams of data such as Fitbit data, collected passively from users.
 
@@ -31,6 +30,6 @@ The repository contains the following main files:
 
 3. **stats.py**: Run the file like a regular Python script. It will prompt the user to enter an output directory where all the results pertaining to the stats of the passive data can be saved locally.
 
-4. **processing.py**: Run the file like a regular Python script. It will prompt the user to enter an output directory where all the intermediate and final processed passive data can be saved locally.
+4. **processing.py**: Run the file like a regular Python script. It will prompt the user to enter an output directory where all the intermediate and final processed passive data can be saved locally. Note that it may take about 60-90 minutes for the `processing.py` file to process all the passive data.
 
 5. **passive_data_processing_interactively.ipynb**: Run the notebook in an interactive environment. It performs the same operations as `processing.py` but also allows for storing files on NAS and running interactively.
