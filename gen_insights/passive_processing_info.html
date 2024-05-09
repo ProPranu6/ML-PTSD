@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html">
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Name of the Processing</th>
+<th>Algorithm Followed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remove duplicate entries in the data</td>
+<td>Duplicates Removal</td>
+<td>- Rows with duplicate &lt;uid, startDate, endDate, value&gt; removed</td>
+</tr>
+<tr>
+<td>Resolve inconsistent time intervals - multiple values recorded for the same &lt;uid, startDate, endDate&gt; combination</td>
+<td>Resolving Inconsistencies</td>
+<td>- Consider each overlapping time range portion as an independent interval  - If inconsistent records have different sourceBundleID, perform “mean” (for numeric) / “mode” (for categorical) across all inconsistent values  - If inconsistent records have the same sourceBundleID, retain inconsistent values  - Aggregate data for day and day-half levels information along with summary statistics following conceptual aggregation guidelines</td>
+</tr>
+<tr>
+<td>Aggregate data for day and day-half levels information along with summary statistics</td>
+<td>Conceptual Aggregation</td>
+<td>- Get the joining date from the file ‘/Volumes/MAVERICK/master-download/users.csv’ for each user. If a user’s join time is after 6 pm on the given date, then day 0 starts from 6 pm of that date. If the join time is before 6 pm on the given date, then day 0 begins from 6 pm of the previous day.  - Create day boundaries at 6pm of each day and split any time ranges spread across day boundaries into two separate time ranges  - Calculate days and day-half(s) elapsed by every time range starting from the joining date of each user for every stream, for 84 consecutive days  - Aggregate all the results, summary statistics in a day and day-half following the Table 3. aggregation_info</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+
+</html>

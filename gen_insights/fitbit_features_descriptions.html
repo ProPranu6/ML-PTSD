@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html">
+<table>
+<thead>
+<tr>
+<th>Feature          (origin|feature_name)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV | activities-Distance</td>
+<td>Tracks distance walked during general activities and preset-exercise sessions</td>
+</tr>
+<tr>
+<td>JSON | exercise-distance</td>
+<td>Tracks distance walked during dedicated or manually set exercise sessions</td>
+</tr>
+<tr>
+<td>JSON | distance-value</td>
+<td>Tracks distance walked overall (similar to activities-Distance)</td>
+</tr>
+<tr>
+<td>JSON | exercise-manualValuesSpecified.distance</td>
+<td>Distance manually entered by users</td>
+</tr>
+<tr>
+<td>CSV | activities-Steps</td>
+<td>Tracks steps walked during general activities and exercise sessions</td>
+</tr>
+<tr>
+<td>JSON | exercise-steps</td>
+<td>Tracks steps walked during dedicated or manually set exercise sessions</td>
+</tr>
+<tr>
+<td>JSON | steps-value</td>
+<td>Tracks steps walked throughout the day</td>
+</tr>
+<tr>
+<td>JSON | exercise-manualValuesSpecified.steps</td>
+<td>Steps manually entered by users during exercise sessions</td>
+</tr>
+<tr>
+<td>CSV | activities-Floors</td>
+<td>Tracks number of floors (continuous 10 feet /3 meter elevations) during general activities and exercise sessions</td>
+</tr>
+<tr>
+<td>JSON | exercise-elevationGain</td>
+<td>Tracks elevationGain during dedicated or manually set exercise sessions in meters</td>
+</tr>
+<tr>
+<td>JSON | altitude-value</td>
+<td>Tracks altitude during day</td>
+</tr>
+<tr>
+<td>CSV | sleep-Minutes Asleep</td>
+<td>Tracks total time in asleep state</td>
+</tr>
+<tr>
+<td>CSV | sleep-Time in Bed</td>
+<td>Tracks total time in bed</td>
+</tr>
+<tr>
+<td>JSON | sleep-duration</td>
+<td>Tracks total time in sleep (including asleep and wakefullness) (in milli seconds)</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.asleep.minutes</td>
+<td>Tracks total time in asleep state</td>
+</tr>
+<tr>
+<td>JSON | sleep-minutesAsleep</td>
+<td>Tracks total time in asleep state</td>
+</tr>
+<tr>
+<td>JSON | sleep-timeInBed</td>
+<td>Tracks total time in bed</td>
+</tr>
+<tr>
+<td>JSON | sleep-mainSleep</td>
+<td>Tracks boolean of main sleep</td>
+</tr>
+<tr>
+<td>JSON | sleep-type</td>
+<td>The type of sleep log (classic | stages)</td>
+</tr>
+<tr>
+<td>JSON | sleep-infoCode</td>
+<td>An integer value representing the quality of data collected within the sleep log. 0 = Sufficient data to generate a sleep log. 1 = Insufficient heart rate data. 2 = Sleep period was too short (less than 3 hours). 3 = Server-side issue.</td>
+</tr>
+<tr>
+<td>JSON | sleep-logType</td>
+<td>The type of sleep in terms of how it was logged (auto_detected | manual)</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.asleep.count</td>
+<td>Tracks number of asleep counts</td>
+</tr>
+<tr>
+<td>CSV | sleep-Minutes Awake</td>
+<td>Tracks total wake time</td>
+</tr>
+<tr>
+<td>CSV | sleep-Number of Awakenings</td>
+<td>Tracks total counts of awakenings</td>
+</tr>
+<tr>
+<td>JSON | sleep-minutesAwake</td>
+<td>Tracks total awake time</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.awake.count</td>
+<td>Tracks total counts of awakenings</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.awake.minutes</td>
+<td>Tracks total awake time</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.sleep_stage.count</td>
+<td>Tracks total counts of sleep_stage stages</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.sleep_stage.minutes</td>
+<td>Tracks total sleep_stage stage time</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.summary.sleep_stage.thirtyDayAvgMinutes</td>
+<td>Tracks the average sleep_stage stage time over the past 30 days</td>
+</tr>
+<tr>
+<td>JSON | sleep-minutesToFallAsleep</td>
+<td>Tracks total time to fall asleep</td>
+</tr>
+<tr>
+<td>JSON | sleep-minutesAfterWakeup</td>
+<td>Tracks total time after wake</td>
+</tr>
+<tr>
+<td>CSV | sleep_score-overall_score</td>
+<td>Overall sleep score</td>
+</tr>
+<tr>
+<td>CSV | sleep_score-composition_score</td>
+<td>Composition score</td>
+</tr>
+<tr>
+<td>CSV | sleep_score-revitalization_score</td>
+<td>Revitalization score</td>
+</tr>
+<tr>
+<td>CSV | sleep_score-duration_score</td>
+<td>Duration score</td>
+</tr>
+<tr>
+<td>CSV | sleep_score-restlessness</td>
+<td>Restlessness score</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-SLEEP_POINTS</td>
+<td>Stress score points related to sleep</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-MAX_SLEEP_POINTS</td>
+<td>Maximum stress score points related to sleep</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-RESPONSIVENESS_POINTS</td>
+<td>Stress score points related to responsiveness to stressors</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-MAX_RESPONSIVENESS_POINTS</td>
+<td>Maximum stress score points for responsiveness</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-EXERTION_POINTS</td>
+<td>Stress score points related to physical exertion</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-MAX_EXERTION_POINTS</td>
+<td>Maximum stress score points for physical exertion</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-STATUS</td>
+<td>Current stress level status</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-CALCULATION_FAILED</td>
+<td>Instances where Fitbit might have failed calculating stress scores</td>
+</tr>
+<tr>
+<td>CSV | Stress Score-STRESS_SCORE</td>
+<td>Overall stress score calculated</td>
+</tr>
+<tr>
+<td>JSON | exercise-activityName</td>
+<td>Name of the activity</td>
+</tr>
+<tr>
+<td>JSON | exercise-activityTypeId</td>
+<td>Type ID of the activity</td>
+</tr>
+<tr>
+<td>JSON | exercise-activityLevel</td>
+<td>Minutes active</td>
+</tr>
+<tr>
+<td>JSON | exercise-duration</td>
+<td>Duration of the exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-activeDuration</td>
+<td>Active duration of the exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-logType</td>
+<td>Type of exercise log</td>
+</tr>
+<tr>
+<td>JSON | exercise-hasGps</td>
+<td>Indicates if GPS was used during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-shouldFetchDetails</td>
+<td>Indicates if exercise details should be fetched</td>
+</tr>
+<tr>
+<td>JSON | exercise-hasActiveZoneMinutes</td>
+<td>Indicates if there are active zone minutes</td>
+</tr>
+<tr>
+<td>JSON | exercise-source.type</td>
+<td>Type of the data source</td>
+</tr>
+<tr>
+<td>JSON | <a href="http://exercise-source.name">exercise-source.name</a></td>
+<td>Name of the data source</td>
+</tr>
+<tr>
+<td>JSON | <a href="http://exercise-source.id">exercise-source.id</a></td>
+<td>ID of the data source</td>
+</tr>
+<tr>
+<td>JSON | exercise-source.url</td>
+<td>URL of the data source</td>
+</tr>
+<tr>
+<td>JSON | exercise-source.trackerFeatures</td>
+<td>Tracker features</td>
+</tr>
+<tr>
+<td>JSON | exercise-speed</td>
+<td>Speed during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-pace</td>
+<td>Pace during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-averageHeartRate</td>
+<td>Average heart rate during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-calories</td>
+<td>Calories burned during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-swimLengths</td>
+<td>Lengths swum during exercise</td>
+</tr>
+<tr>
+<td>JSON | exercise-poolLength</td>
+<td>Length of the pool</td>
+</tr>
+<tr>
+<td>JSON | exercise-poolLengthUnit</td>
+<td>Unit of the pool length</td>
+</tr>
+<tr>
+<td>JSON | swim_lengths_data-value.strokeCount</td>
+<td>Stroke count during swimming</td>
+</tr>
+<tr>
+<td>JSON | swim_lengths_data-value.swimStrokeType</td>
+<td>Type of swim stroke</td>
+</tr>
+<tr>
+<td>JSON | swim_lengths_data-value.swimAlgorithmType</td>
+<td>Algorithm used for swimming</td>
+</tr>
+<tr>
+<td>CSV | foods-Calories In</td>
+<td>Calories consumed</td>
+</tr>
+<tr>
+<td>CSV | foods-Fat_g</td>
+<td>Fat intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Fiber_g</td>
+<td>Fiber intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Carbs_g</td>
+<td>Carbohydrate intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Sodium_mg</td>
+<td>Sodium intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Protein_g</td>
+<td>Protein intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Water_fl_oz</td>
+<td>Water intake</td>
+</tr>
+<tr>
+<td>CSV | foods-Meal</td>
+<td>Meal information</td>
+</tr>
+<tr>
+<td>CSV | foods-Food</td>
+<td>Food item</td>
+</tr>
+<tr>
+<td>CSV | foods-Food_Calories</td>
+<td>Calories per food item</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-type</td>
+<td>Type of temperature computed</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-baseline_relative_sample_sum</td>
+<td>Sum of baseline relative sample</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-temperature_samples</td>
+<td>Temperature samples</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-nightly_temperature</td>
+<td>Nightly temperature</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-baseline_relative_sample_sum_of_squares</td>
+<td>Sum of squares of baseline relative sample</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-baseline_relative_nightly_standard_deviation</td>
+<td>Nightly standard deviation of baseline relative temperature</td>
+</tr>
+<tr>
+<td>CSV | Computed Temperature-baseline_relative_sample_standard_deviation</td>
+<td>Standard deviation of baseline relative temperature samples</td>
+</tr>
+<tr>
+<td>JSON | heart_rate-value.bpm</td>
+<td>Heart rate in beats per minute</td>
+</tr>
+<tr>
+<td>JSON | heart_rate-value.confidence</td>
+<td>Confidence level of heart rate measurement</td>
+</tr>
+<tr>
+<td>CSV | Daily Heart Rate Variability Summary-rmssd</td>
+<td>Root mean square of successive differences in heart rate</td>
+</tr>
+<tr>
+<td>CSV | Daily Heart Rate Variability Summary-nremhr</td>
+<td>Non-rapid eye movement heart rate</td>
+</tr>
+<tr>
+<td>CSV | Daily Heart Rate Variability Summary-entropy</td>
+<td>Entropy of heart rate</td>
+</tr>
+<tr>
+<td>CSV | Daily Respiratory Rate Summary-daily_respiratory_rate</td>
+<td>Daily respiratory rate</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-full_sleep_breathing_rate</td>
+<td>Breathing rate during full sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-full_sleep_standard_deviation</td>
+<td>Standard deviation of breathing rate during full sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-full_sleep_signal_to_noise</td>
+<td>Signal-to-noise ratio of breathing rate during full sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-deep_sleep_breathing_rate</td>
+<td>Breathing rate during deep sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-deep_sleep_standard_deviation</td>
+<td>Standard deviation of breathing rate during deep sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-deep_sleep_signal_to_noise</td>
+<td>Signal-to-noise ratio of breathing rate during deep sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-light_sleep_breathing_rate</td>
+<td>Breathing rate during light sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-light_sleep_standard_deviation</td>
+<td>Standard deviation of breathing rate during light sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-light_sleep_signal_to_noise</td>
+<td>Signal-to-noise ratio of breathing rate during light sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-rem_sleep_breathing_rate</td>
+<td>Breathing rate during REM sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-rem_sleep_standard_deviation</td>
+<td>Standard deviation of breathing rate during REM sleep</td>
+</tr>
+<tr>
+<td>CSV | Respiratory Rate Summary-rem_sleep_signal_to_noise</td>
+<td>Signal-to-noise ratio of breathing rate during REM sleep</td>
+</tr>
+<tr>
+<td>CSV | Daily SpO2-average_value</td>
+<td>Daily average SpO2 (Oxygen saturation)</td>
+</tr>
+<tr>
+<td>CSV | Daily SpO2-lower_bound</td>
+<td>Lower bound of SpO2</td>
+</tr>
+<tr>
+<td>CSV | Daily SpO2-upper_bound</td>
+<td>Upper bound of SpO2</td>
+</tr>
+<tr>
+<td>CSV | Minute SpO2-value</td>
+<td>SpO2 value per minute</td>
+</tr>
+<tr>
+<td>JSON | demographic_vo2_max-value.demographicVO2Max</td>
+<td>Demographic VO2 max</td>
+</tr>
+<tr>
+<td>JSON | demographic_vo2_max-value.demographicVO2MaxError</td>
+<td>Error in demographic VO2 max</td>
+</tr>
+<tr>
+<td>JSON | demographic_vo2_max-value.filteredDemographicVO2Max</td>
+<td>Filtered demographic VO2 max</td>
+</tr>
+<tr>
+<td>JSON | demographic_vo2_max-value.filteredDemographicVO2MaxError</td>
+<td>Error in filtered demographic VO2 max</td>
+</tr>
+<tr>
+<td>CSV | Device Temperature-temperature</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>CSV | Device Temperature-sensor_type</td>
+<td>Sensor type</td>
+</tr>
+<tr>
+<td>CSV | body-Weight</td>
+<td>Body weight</td>
+</tr>
+<tr>
+<td>CSV | body-Fat</td>
+<td>Body fat percentage</td>
+</tr>
+<tr>
+<td>CSV | body-BMI</td>
+<td>Body mass index</td>
+</tr>
+<tr>
+<td>JSON | weight-weight</td>
+<td>Weight</td>
+</tr>
+<tr>
+<td>JSON | weight-bmi</td>
+<td>Body mass index</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.data</td>
+<td>Sleep level data</td>
+</tr>
+<tr>
+<td>JSON | sleep-levels.shortData</td>
+<td>Short sleep level data</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+
+</html>

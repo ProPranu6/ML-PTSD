@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>merging_processing_info</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html">
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Name of the Processing</th>
+<th>Algorithm Followed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identify overlap between merged Fitbit and passive features</td>
+<td>Overlap Identification</td>
+<td>Manually inspect individual features to identify overlap between merged Fitbit (135 features) and passive features (11 features)</td>
+</tr>
+<tr>
+<td>Format passive and Fitbit files to have the same column format</td>
+<td>Data Formatting</td>
+<td>- Rename columns to ensure both passive and Fitbit files have the same format, specifically including &lt;uid, start-date, end-date, sourceBundleId, value&gt; columns - Split timestamp information of Fitbit into ‘start-date’ and ‘end-date’ if not originally present - Incorporate sourceBundleId information explicitly to be originating from Fitbit if not present originally</td>
+</tr>
+<tr>
+<td>Concatenate passive and Fitbit files along the row axis</td>
+<td>Data Concatenation</td>
+<td>Concatenate the formatted passive and Fitbit files along the row axis</td>
+</tr>
+<tr>
+<td>Remove redundancy and inconsistencies</td>
+<td>Merging - Duplicates Removal</td>
+<td>- Rows with duplicate entries removed</td>
+</tr>
+<tr>
+<td>Resolve inconsistencies</td>
+<td>Merging - Inconsistencies Resolution</td>
+<td>- Resolution of inconsistencies following the processes involved in processing passive data</td>
+</tr>
+<tr>
+<td>Perform conceptual aggregation</td>
+<td>Merging - Conceptual Aggregation</td>
+<td>- Conceptual aggregation following the processes described in Table 2. (processing_info)</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+
+</html>
